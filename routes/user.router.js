@@ -2,7 +2,7 @@ const  { Router } = require('express')
 const  { check } = require('express-validator')
 const { findUserById, findUsers, createUser, updateUser, deleteUser } = require('../controllers/user.controller')
 
-const router = Router()
+
 
 router.get('/:id', findUserById)
 

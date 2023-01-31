@@ -24,8 +24,7 @@ class Server {
         //Middlewares
         this.middlewares();
 
-        //Routes
-        this.routes();
+      
     }
 
     middlewares() {
