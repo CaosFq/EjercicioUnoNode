@@ -13,9 +13,9 @@ exports.Repair = db.define('repair', {
         allowNull: false
     },
     status: {
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.STRING,
         allowNull: false,
-        defaultValue: true
+        defaultValue: pending
     },
     userId: {
         type: DataTypes.INTEGER,

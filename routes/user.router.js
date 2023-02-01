@@ -4,15 +4,15 @@ const { findUserById, findUsers, createUser, updateUser, deleteUser } = require(
 
 
 
-router.get('/:id', findUserById)
+router.get('/:id', findUserById)//Obtener un solo usuario dado un id
 
-router.get('/', findUsers)
+router.get('/', findUsers)//Obtener una lista de usuarios
 
-router.post('/', createUser)
+router.post('/', createUser)//Crear un nuevo usuario se proporcionar por el req.body(name, email, password, role), el rol debe se cliente o employee
 
-router.patch('/:id', updateUser)
+router.patch('/:id', updateUser)//Actualizar los datos de un usuario dado un id, solo puede actualizar su name email
 
-router.delete('/:id', deleteUser)
+router.delete('/:id', deleteUser)//deshabilitar la cuenta de un usuario
 
 module.exports =  { 
     userRout: router

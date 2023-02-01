@@ -23,13 +23,13 @@ const User = db.define('user', {
     role: {
         type: DataTypes.STRING,
         allowNull: false,
-        defaultValue: 'normal',
-        enum: ['normal', 'admin']
+        defaultValue: available,
+        enum:['client', 'employee']
     },
-    status: {
-        type: DataTypes.BOOLEAN,
+    status: {//El estado de la reparacion tiene que ser pending, completed, cancelled. ¡¡¡No veo en este momen como expresarlo!!!.
+        type: DataTypes.STRING,
         allowNull: false,
-        defaultValue: true
+        defaultValue: available
     }
 })
 
